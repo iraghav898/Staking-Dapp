@@ -39,11 +39,3 @@ Building Your Own Token Stacking DApp: Become a DeFi Developer. Step into the wo
 
 
 
-
-## Authors
-
-- [@theblockchaincoders.com](https://www.theblockchaincoders.com/)
-- [@consultancy](https://www.theblockchaincoders.com/consultancy)
-- [@youtube](https://www.youtube.com/@daulathussain)
-
-

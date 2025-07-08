@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Apply for IGO | Staking DApp</title>
+   <link rel="icon" href="assets/img/logo/logoEth.png" />
+  <style>
+    body {
+      background-color: #0b0c1a;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #101223;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #1f2235;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #ffffff;
+    }
+
+    .form-container {
+      max-width: 700px;
+      margin: 50px auto;
+      background-color: #16182c;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ecbff;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 6px;
+      border: none;
+      background-color: #222437;
+      color: #fff;
+      font-size: 1em;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      background-color: #2b2e47;
+    }
+
+    button {
+      margin-top: 30px;
+      width: 100%;
+      padding: 12px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 6px;
+      background: linear-gradient(90deg, #4b6fff, #a03aff);
+      color: white;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background: linear-gradient(90deg, #2d4fff, #7a2aff);
+    }
+
+    footer {
+      text-align: center;
+      margin: 50px 0 20px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>IGO Application Form</h1>
+  </header>
+
+  <div class="form-container">
+    <h2>Apply Now to Join the IGO</h2>
+    <form action="https://formsubmit.co/rg0257245@gmail.com" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="John Doe">
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="wallet">ERC20 Wallet Address</label>
+      <input type="text" id="wallet" name="wallet" placeholder="0xABC123..." required>
+
+      <label for="project">Tell us about your project or reason to apply</label>
+      <textarea id="project" name="project" rows="5" placeholder="Explain your goals..." required></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Your Staking DApp. All rights reserved.
+  </footer>
+
+</body>
+</html>

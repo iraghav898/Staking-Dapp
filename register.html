@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register: ERC20 Staking Application</title>
+    <link rel="icon" href="assets/img/logo/logoEth.png" />
+    <link
+    rel = "stylesheet"
+    type = "text/css"
+    href="assets/vendor/notyf/notyf.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    
+  </head>
+  <body>
+
+      <!-- PRELOADER -->
+     <div id="gameon-preloader" class="gameon-preloader">
+      <div class="preloader-animation">
+        <div class="spinner"></div>
+        <p class="fw-5 text-center text-uppercase">Loading</p>
+      </div>
+
+      <div class="loader-animation">
+        <div class="row h-100">
+          <!-- SINGLE-LOADER -->
+           <div class="col-3 single-loader p-0">
+            <div class="loader-bg"></div>
+           </div>
+               <!-- SINGLE-LOADER -->
+               <div class="col-3 single-loader p-0">
+                <div class="loader-bg"></div>
+               </div>
+                   <!-- SINGLE-LOADER -->
+           <div class="col-3 single-loader p-0">
+            <div class="loader-bg"></div>
+           </div>
+               <!-- SINGLE-LOADER -->
+               <div class="col-3 single-loader p-0">
+                <div class="loader-bg"></div>
+               </div>
+        </div>
+      </div>
+     </div>
+
+     <!--PRELOADER END-->
+
+      
+
+     
+
+     <!--contract start-->
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Initialize - Smart Contract</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #0f0f1c;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      background-color: #1c1c2e;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+
+    h2 {
+      text-align: center;
+      color: #ffffff;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #ddd;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border-radius: 8px;
+      border: none;
+      font-size: 14px;
+      background: #eaeaea;
+      color: #000;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 12px 20px;
+      background-color: #007bff;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .popup {
+      display: none;
+      background-color: #1e1e2f;
+      padding: 20px;
+      text-align: center;
+      border-radius: 12px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 999;
+      box-shadow: 0 0 30px rgba(0,0,0,0.4);
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Smart Contract</h2>
+    <form id="smartForm">
+      <label for="owner">Contract Owner:</label>
+      <input type="text" id="owner" name="owner" required>
+
+      <label for="token">Token Address:</label>
+      <input type="text" id="token" name="token" required>
+
+      <label for="min">Minimum Staking Amount:</label>
+      <input type="number" id="min" name="min" required>
+
+      <label for="max">Maximum Staking Amount:</label>
+      <input type="number" id="max" name="max" required>
+
+      <label for="start">Start Date:</label>
+      <input type="date" id="start" name="start" required>
+
+      <label for="end">End Date:</label>
+      <input type="date" id="end" name="end" required>
+
+      <label for="apy">APY Rate (%):</label>
+      <input type="number" step="0.01" id="apy" name="apy" required>
+
+      <label for="days">Stake Days:</label>
+      <input type="number" id="days" name="days" required>
+
+      <label for="fee">Early Stake Fee (%):</label>
+      <input type="number" step="0.01" id="fee" name="fee" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- Popup Confirmation -->
+  <div class="popup" id="popup">
+    ✅ Smart contract initialized successfully!
+  </div>
+
+  <script>
+    document.getElementById("smartForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      // You can add validation or logic here
+      document.getElementById("popup").style.display = "block";
+
+      setTimeout(() => {
+        document.getElementById("popup").style.display = "none";
+      }, 3000);
+
+      // You can log form values if needed
+      const data = {
+        owner: document.getElementById("owner").value,
+        token: document.getElementById("token").value,
+        min: document.getElementById("min").value,
+        max: document.getElementById("max").value,
+        start: document.getElementById("start").value,
+        end: document.getElementById("end").value,
+        apy: document.getElementById("apy").value,
+        days: document.getElementById("days").value,
+        fee: document.getElementById("fee").value,
+      };
+      console.log("Form Data:", data);
+    });
+  </script>
+
+</body>
+</html>
+
+
+     <!--contract end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     <!--SCRIPTS-->
+
+     <script src="assets/js/vendor/jquery.min.js"></script>
+     <script src="assets/js/vendor/popper.min.js"></script>
+     <script src="assets/js/vendor/bootstrap.min.js"></script>
+     <script src="assets/js/vendor/all.min.js"></script>
+     <script src="assets/js/vendor/gallery.min.js"></script>
+     <script src="assets/js/vendor/slider.min.js"></script>
+     <script src="assets/js/vendor/countdown.min.js"></script>
+     <script src="assets/js/vendor/shuffle.min.js"></script>
+     <script src="assets/js/main.js"></script>
+     <script src="assets/vendor/notyf/notyf.min.js"></script> 
+     <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+     <script src="js/etherjs.js"></script>
+
+
+  </body>
+</html>
